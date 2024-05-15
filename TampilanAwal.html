@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Snake Game</title>
+<link rel="stylesheet" href="TampilanAwal.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="Snake Game Logo" class="logo">
+    <h1 class="title">Snake Game</h1>
+    <div class="button-container">
+        <a href="UlarVersi1.html" class="button">versi1</a>
+        <a href="UlarVersi2.html" class="button">versi2</a>
+        <a href="skin.html" class="button">Skin</a> 
+    </div>
+    <div class="setting-container">
+        <a href="#" class="button settings-button" id="settingsButton"><i class="fas fa-cog"></i></a> 
+    </div>
+</div>
+
+<div id="settingsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sound Settings</h2>
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+    </div>
+</div>
+
+<audio hidden autoplay loop>
+    <source src="SoundSnake.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio
+  </audio>
+
+<script src="audio.js"></script>
+
+</body>
+</html>
